@@ -83,7 +83,7 @@ jobs:
           tags: |
             type=raw,value=${{ matrix.graalvm_version }}
             type=raw,value=graalvm${{ matrix.graalvm_version }}
-            type=raw,value=latest,enable=${{ matrix.graalvm_version == '21' }}
+            type=raw,value=latest,enable=${{ matrix.graalvm_version == '25' }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
